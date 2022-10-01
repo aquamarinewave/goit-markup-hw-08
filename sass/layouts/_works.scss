@@ -1,0 +1,34 @@
+.works {
+  @include section;
+}
+
+.works__list {
+  display: flex;
+  gap: 30px;
+}
+
+.works__item {
+  position: relative;
+}
+
+.works__img {
+  width: 100%;
+}
+
+.works__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+  background-color: var(--we-do-bg);
+  position: absolute;
+  bottom: 0;
+}

@@ -1,0 +1,22 @@
+@import 'utils/variables';
+@import 'utils/visually-hidden';
+@import 'utils/mixins';
+
+@import 'base/reset';
+@import 'base/base';
+@import 'base/container';
+
+@import 'layouts/header';
+@import 'layouts/hero';
+@import 'layouts/modal';
+@import 'layouts/benafits';
+@import 'layouts/works';
+@import 'layouts/team';
+@import 'layouts/clients';
+@import 'layouts/footer';
+@import 'layouts/portfolio';
+
+@import 'components/socials';
+@import 'components/logo';
+@import 'components/nav';
+@import 'components/btn';

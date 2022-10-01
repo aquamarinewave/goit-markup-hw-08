@@ -1,0 +1,37 @@
+.clients {
+  @include section;
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients__item {
+  flex-basis: calc(
+    (100% - (var(--indent-client)) * (var(--items-client) - 1)) / var(--items-client)
+  );
+}
+
+.clients__icon {
+  fill: currentColor;
+}
+
+.clients__link {
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  transition: color 250ms var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+    border: 1px solid var(--accent-text-color);
+  }
+}

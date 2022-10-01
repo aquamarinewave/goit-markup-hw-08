@@ -1,0 +1,35 @@
+.header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__contacts {
+  display: flex;
+  gap: 50px;
+}
+
+.header__contact-icon {
+  fill: currentColor;
+}
+
+.header__contacts-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--submain-text-color);
+  transition: color 250ms var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--active-color);
+  }
+}
