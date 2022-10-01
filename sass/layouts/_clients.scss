@@ -1,9 +1,14 @@
 .clients {
   @include section;
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px);
+  }
 }
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   align-items: center;
   justify-content: center;
@@ -11,8 +16,21 @@
 
 .clients__item {
   flex-basis: calc(
-    (100% - (var(--indent-client)) * (var(--items-client) - 1)) / var(--items-client)
+    (100% - (var(--indent-client)) * (var(--items-client-mobile) - 1)) / var(--items-client-mobile)
   );
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(
+      (100% - (var(--indent-client)) * (var(--items-client-tablet) - 1)) /
+        var(--items-client-tablet)
+    );
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(
+      (100% - (var(--indent-client)) * (var(--items-client) - 1)) / var(--items-client)
+    );
+  }
 }
 
 .clients__icon {

@@ -2,11 +2,18 @@
   @include section;
 
   padding-bottom: 0;
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px);
+  }
 }
 
 .benafits__list {
-  display: flex;
-  gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .benafits__title {
@@ -19,7 +26,17 @@
 }
 
 .benafits__item {
-  flex-basis: calc((100% - (var(--indent-main)) * (var(--items-main) - 1)) / var(--items-main));
+  max-width: 450px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(
+      (100% - (var(--indent-main)) * (var(--items-main-tablet) - 1)) / var(--items-main-tablet)
+    );
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - (var(--indent-main)) * (var(--items-main) - 1)) / var(--items-main));
+  }
 }
 
 .benafits__icon-container {

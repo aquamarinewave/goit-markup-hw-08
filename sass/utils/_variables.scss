@@ -1,44 +1,48 @@
 :root {
-    /* fonts */
-    --main-font-familly: 'Roboto', sans-serif;
-    --submain-font-family: 'Raleway', sans-serif;
-    --main-font-size: 14px;
-    --logo-font-size: 26px;
-    --submain-font-size: 16px;
-    --section-header-font-size: 36px;
-    --subsection-header-font-size: 18px;
-    /* text colors */
-    --accent-text-color: #2196f3;
-    --main-text-color: #212121;
-    --light-text-color: #ffffff;
-    --dark-text-color: #000000;
-    --submain-text-color: #757575;
-    --sub-text-color-trans: rgba(255, 255, 255, 0.6);
-    --border-color: #ececec;
-    --portfolio-border-color: #eeeeee;
-    --icon-color: #afb1b8;
-    /* background colors */
-    --accent-bg-color: #2196f3;
-    --main-bg-color: #ffffff;
-    --submain-bg-color: #f5f4fa;
-    --dark-bg-color: #2f303a;
-    --soc-bg-color: rgba(255, 255, 255, 0.1);
-    --hero-bg-color: #c4c4c4;
-    --hero-bg-overlay: rgba(47, 48, 58, 0.4);
-    --we-do-bg: rgba(47, 48, 58, 0.8);
-    --portfolio-bg-desc: rgba(33, 150, 243, 0.9);
-    --backdriop-bg-color: rgba(0, 0, 0, 0.2);
-    /* actions */
-    --active-color: #2196f3;
-    --active-bg-color: #2196f3;
-    --active-bg-btn: #188ce8;
-    /* other */
-    --items-main: 4;
-    --items-client: 6;
-    --indent-main: 30px;
-    --indent-client: 30px;
-    --items-portfolio: 3;
-    --indent-portfolio: 30px;
-    --animation: cubic-bezier(0.4, 0, 0.2, 1);
-    --animarion-time: 250ms;
+  /* fonts */
+  --main-font-familly: 'Roboto', sans-serif;
+  --submain-font-family: 'Raleway', sans-serif;
+  --main-font-size: 14px;
+  --logo-font-size: 26px;
+  --submain-font-size: 16px;
+  --section-header-font-size: 36px;
+  --subsection-header-font-size: 18px;
+  /* text colors */
+  --accent-text-color: #2196f3;
+  --main-text-color: #212121;
+  --light-text-color: #ffffff;
+  --dark-text-color: #000000;
+  --submain-text-color: #757575;
+  --sub-text-color-trans: rgba(255, 255, 255, 0.6);
+  --border-color: #ececec;
+  --portfolio-border-color: #eeeeee;
+  --icon-color: #afb1b8;
+  /* background colors */
+  --accent-bg-color: #2196f3;
+  --main-bg-color: #ffffff;
+  --submain-bg-color: #f5f4fa;
+  --dark-bg-color: #2f303a;
+  --soc-bg-color: rgba(255, 255, 255, 0.1);
+  --hero-bg-color: #c4c4c4;
+  --hero-bg-overlay: rgba(47, 48, 58, 0.4);
+  --we-do-bg: rgba(47, 48, 58, 0.8);
+  --portfolio-bg-desc: rgba(33, 150, 243, 0.9);
+  --backdriop-bg-color: rgba(0, 0, 0, 0.2);
+  /* actions */
+  --active-color: #2196f3;
+  --active-bg-color: #2196f3;
+  --active-bg-btn: #188ce8;
+  /* other */
+  --items-main: 4;
+  --items-main-tablet: 2;
+  --items-client: 6;
+  --items-client-mobile: 2;
+  --items-client-tablet: 3;
+  --indent-main: 30px;
+  --indent-client: 30px;
+  --items-portfolio: 3;
+  --items-portfolio-tablet: 2;
+  --indent-portfolio: 30px;
+  --animation: cubic-bezier(0.4, 0, 0.2, 1);
+  --animarion-time: 250ms;
 }
