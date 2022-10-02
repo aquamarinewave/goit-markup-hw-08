@@ -23,12 +23,23 @@
             <span class="accent">Web</span>Studio
           </a>
 
+          <button
+            class="mobile-menu__open-btn js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="mobile-menu-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
+
           <ul class="list nav__menu">
             <li class="nav__item">
               <a class="link nav__link" href="./index.html">Студія</a>
             </li>
             <li class="nav__item">
-              <a class="link nav__link nav__current-text" href="./porfolio.html">Портфоліо</a>
+              <a class="link nav__link nav__current-text" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="nav__item"><a class="link nav__link" href="">Контакти</a></li>
           </ul>
@@ -48,6 +59,83 @@
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mobile-menu js-menu-container">
+        <button class="mobile-menu__close-btn js-close-menu" type="button">
+          <svg class="mobile-menu__close-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <ul class="list mobile-menu__nav">
+          <li class="mobile-menu__item">
+            <a class="link mobile-menu__link nav__current-text" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="link mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item"><a class="link mobile-menu__link" href="">Контакти</a></li>
+        </ul>
+        <ul class="list mobile-menu__contacts">
+          <li class="mobile-menu__tel">
+            <a class="link mobile-menu__tel-link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+          </li>
+          <li class="mobile-menu__contacts-item">
+            <a
+              class="link mobile-menu__contacts-link mobile-menu__email"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="list mobile-menu__socials">
+          <li class="mobile-menu__socials-item">
+            <a
+              class="link mobile-menu__socials-link"
+              href="https://instagram.com"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a
+              class="link mobile-menu__socials-link"
+              href="https://twitter.com"
+              aria-label="Twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a
+              class="link mobile-menu__socials-link"
+              href="https://facebook.com"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a
+              class="link mobile-menu__socials-link"
+              href="https://linkedin.com"
+              aria-label="Linkedin"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
             </a>
           </li>
         </ul>
@@ -81,13 +169,36 @@
             <li class="portfolio__item">
               <a class="link portfolio__link" href="">
                 <div class="portfolio__img-container">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/img.jpg"
-                    alt="Ноутбук на екрані якого зображено сайт Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x.jpg 1x,
+                        ./images/portfolio/img_lg-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x.jpg 1x,
+                        ./images/portfolio/img_md-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x.jpg 1x,
+                        ./images/portfolio/img_sm-@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img_sm-@1x.jpg"
+                      alt="Ноутбук на екрані якого зображено сайт Технокряк"
+                    />
+                    <!-- width="370"
+                      height="294" -->
+                  </picture>
                   <div class="portfolio__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -103,13 +214,36 @@
             <li class="portfolio__item">
               <a class="link portfolio__link" href="">
                 <div class="portfolio__img-container">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/img2.jpg"
-                    alt="Два баскетболісти, один в іншого намагається вибити м'яч у стрибку"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x-1.jpg 1x,
+                        ./images/portfolio/img_lg-@2x-1.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x-1.jpg 1x,
+                        ./images/portfolio/img_md-@2x-1.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x-1.jpg 1x,
+                        ./images/portfolio/img_sm-@2x-1.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img_sm-@1x-1.jpg"
+                      alt="Два баскетболісти, один в іншого намагається вибити м'яч у стрибку"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -127,13 +261,36 @@
             <li class="portfolio__item">
               <a class="link portfolio__link" href="">
                 <div class="portfolio__img-container">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/img3.jpg"
-                    alt="Риба до гори головою і повер написано назву реторану"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x-2.jpg 1x,
+                        ./images/portfolio/img_lg-@2x-2.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x-2.jpg 1x,
+                        ./images/portfolio/img_md-@2x-2.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x-2.jpg 1x,
+                        ./images/portfolio/img_sm-@2x-2.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img_sm-@1x-2.jpg"
+                      alt="Риба до гори головою і повер написано назву реторану"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -149,13 +306,36 @@
             <li class="portfolio__item">
               <a class="link portfolio__link" href="">
                 <div class="portfolio__img-container">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/img4.jpg"
-                    alt="Великі чорні навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x-3.jpg 1x,
+                        ./images/portfolio/img_lg-@2x-3.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x-3.jpg 1x,
+                        ./images/portfolio/img_md-@2x-3.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x-3.jpg 1x,
+                        ./images/portfolio/img_sm-@2x-3.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img_sm-@1x-3.jpg"
+                      alt="Великі чорні навушники"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -171,13 +351,36 @@
             <li class="portfolio__item">
               <a class="link portfolio__link" href="">
                 <div class="portfolio__img-container">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/img5.jpg"
-                    alt="Дві коробочки біла більша і крафтова менша з написами"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x-4.jpg 1x,
+                        ./images/portfolio/img_lg-@2x-4.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x-4.jpg 1x,
+                        ./images/portfolio/img_md-@2x-4.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x-4.jpg 1x,
+                        ./images/portfolio/img_sm-@2x-4.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img_sm-@1x-4.jpg"
+                      alt="Дві коробочки біла більша і крафтова менша з написами"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -193,13 +396,36 @@
             <li class="portfolio__item">
               <a class="link portfolio__link" href="">
                 <div class="portfolio__img-container">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/img6.jpg"
-                    alt="Монітор і на ньому зображено сайт компанії Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x-5.jpg 1x,
+                        ./images/portfolio/img_lg-@2x-5.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x-5.jpg 1x,
+                        ./images/portfolio/img_md-@2x-5.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x-5.jpg 1x,
+                        ./images/portfolio/img_sm-@2x-5.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img_sm-@1x-5.jpg"
+                      alt="Монітор і на ньому зображено сайт компанії Inspiration has no Borders"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -215,13 +441,36 @@
             <li class="portfolio__item">
               <a class="link portfolio__link" href="">
                 <div class="portfolio__img-container">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/img7.jpg"
-                    alt="розгорнутий журнал, на лівому боці зображення дівчини з феном в руках, та через волосся не видно обличча та ноги та руки дівчини, яка тримає сумку, праворуч дві дівчини спиною піднявши руки порізні боки один від одної з символом Victory"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x-6.jpg 1x,
+                        ./images/portfolio/img_lg-@2x-6.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x-6.jpg 1x,
+                        ./images/portfolio/img_md-@2x-6.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x-6.jpg 1x,
+                        ./images/portfolio/img_sm-@2x-6.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img_sm-@1x-6.jpg"
+                      alt="розгорнутий журнал, на лівому боці зображення дівчини з феном в руках, та через волосся не видно обличча та ноги та руки дівчини, яка тримає сумку, праворуч дві дівчини спиною піднявши руки порізні боки один від одної з символом Victory"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -239,13 +488,35 @@
             <li class="portfolio__item">
               <a class="link portfolio__link" href="">
                 <div class="portfolio__img-container">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/img8.jpg"
-                    alt="Бірка з мотузком і на най напис LAB EL TAG"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x-7.jpg 1x,
+                        ./images/portfolio/img_lg-@2x-7.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x-7.jpg 1x,
+                        ./images/portfolio/img_md-@2x-7.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x-7.jpg 1x,
+                        ./images/portfolio/img_sm-@2x-7.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img_sm-@1x-7.jpg"
+                      alt="Бірка з мотузком і на най напис LAB EL TAG"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -262,13 +533,36 @@
             <li class="portfolio__item">
               <a class="link portfolio__link" href="">
                 <div class="portfolio__img-container">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/img9.jpg"
-                    alt="Ноутбук на столі, чоловічі руки на клавіатурі та на екрані зображено сайт Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_lg-@1x-8.jpg 1x,
+                        ./images/portfolio/img_lg-@2x-8.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_md-@1x-8.jpg 1x,
+                        ./images/portfolio/img_md-@2x-8.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_sm-@1x-8.jpg 1x,
+                        ./images/portfolio/img_sm-@2x-8.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/img_sm-@1x-8.jpg"
+                      alt="Ноутбук на столі, чоловічі руки на клавіатурі та на екрані зображено сайт Growing Business"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи

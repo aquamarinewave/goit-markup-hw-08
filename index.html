@@ -277,33 +277,88 @@
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="list works__list">
             <li class="works__item">
-              <img
-                class="works__img"
-                src="./images/what-we-do/img-1.jpg"
-                alt="Стіл на якому лежить аркуш паперу з схематично зображеною логікою сайту, та руки програміста на клавіатурі, який пише код сайту, на моніторі та планшеті видно фрагменти коду"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/what-we-do/img_lg-@1x.webp 1x,
+                    ./images/what-we-do/img_lg-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/what-we-do/img_lg-@1x.jpg 1x,
+                    ./images/what-we-do/img_lg-@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  class="works__img"
+                  src="./images/what-we-do/img_lg-@1x.jpg"
+                  alt="Стіл на якому лежить аркуш паперу з схематично зображеною логікою сайту, та руки програміста на клавіатурі, який пише код сайту, на моніторі та планшеті видно фрагменти коду"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <h3 class="works__title">Десктопні додатки</h3>
             </li>
             <li class="works__item">
-              <img
-                class="works__img"
-                src="./images/what-we-do/img-2.jpg"
-                alt="Дизайнер розробляє прототип, як має виглядати додаток, на ноутбуці та моніторі зображені приклади екранів модільного телефону з варіантами дизайну"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/what-we-do/img_lg-@1x-1.webp 1x,
+                    ./images/what-we-do/img_lg-@2x-1.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/what-we-do/img_lg-@1x-1.jpg 1x,
+                    ./images/what-we-do/img_lg-@2x-1.jpg 2x
+                  "
+                />
+                <img
+                  class="works__img"
+                  src="./images/what-we-do/img_lg-@1x-1.jpg"
+                  alt="Дизайнер розробляє прототип, як має виглядати додаток, на ноутбуці та моніторі зображені приклади екранів модільного телефону з варіантами дизайну"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <h3 class="works__title">Мобільні додатки</h3>
             </li>
             <li class="works__item">
-              <img
-                class="works__img"
-                src="./images/what-we-do/img-3.jpg"
-                alt="Дизайнер підбирає палітру кольорів тримаючи в руках планшет з палітрою у вигляді сот"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/what-we-do/img_lg-@1x-2.webp 1x,
+                    ./images/what-we-do/img_lg-@2x-2.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/what-we-do/img_lg-@1x-2.jpg 1x,
+                    ./images/what-we-do/img_lg-@2x-2.jpg 2x
+                  "
+                />
+                <img
+                  class="works__img"
+                  src="./images/what-we-do/img_lg-@1x-2.jpg"
+                  alt="Дизайнер підбирає палітру кольорів тримаючи в руках планшет з палітрою у вигляді сот"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <h3 class="works__title">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -317,11 +372,20 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/team/img1.jpg"
+                srcset="
+                  ./images/team/img_sm-450-@1x.jpg 450w,
+                  ./images/team/img_sm-450-@2x.jpg 900w,
+                  ./images/team/img_md-354-@1x.jpg 354w,
+                  ./images/team/img_md-354-@2x.jpg 708w,
+                  ./images/team/img_lg-270-@1x.jpg 270w,
+                  ./images/team/img_lg-270-@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img_sm-450-@1x.jpg"
                 alt="Портрет Ігоря Дем'яненко Product Designer"
-                width="270"
-                height="260"
               />
+              <!-- width="270"
+                height="260" -->
               <div class="team__desc">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
@@ -384,10 +448,17 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/team/img2.jpg"
-                alt="Портрет Ольгм Рєпіної Frontend Developer"
-                width="270"
-                height="260"
+                srcset="
+                  ./images/team/img_sm-450-@1x-1.jpg 450w,
+                  ./images/team/img_sm-450-@2x-1.jpg 900w,
+                  ./images/team/img_md-354-@1x-1.jpg 354w,
+                  ./images/team/img_md-354-@2x-1.jpg 708w,
+                  ./images/team/img_lg-270-@1x-1.jpg 270w,
+                  ./images/team/img_lg-270-@2x-1.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img_sm-450-@1x-1.jpg"
+                alt="Портрет Ольги Рєпіної Frontend Developer"
               />
               <div class="team__desc">
                 <h3 class="team__title">Ольга Рєпіна</h3>
@@ -451,10 +522,17 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/team/img3.jpg"
+                srcset="
+                  ./images/team/img_sm-450-@1x-2.jpg 450w,
+                  ./images/team/img_sm-450-@2x-2.jpg 900w,
+                  ./images/team/img_md-354-@1x-2.jpg 354w,
+                  ./images/team/img_md-354-@2x-2.jpg 708w,
+                  ./images/team/img_lg-270-@1x-2.jpg 270w,
+                  ./images/team/img_lg-270-@2x-2.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img_sm-450-@1x-2.jpg"
                 alt="Портрет Миколи Тарасова Marketing"
-                width="270"
-                height="260"
               />
               <div class="team__desc">
                 <h3 class="team__title">Микола Тарасов</h3>
@@ -518,10 +596,17 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/team/img4.jpg"
+                srcset="
+                  ./images/team/img_sm-450-@1x-3.jpg 450w,
+                  ./images/team/img_sm-450-@2x-3.jpg 900w,
+                  ./images/team/img_md-354-@1x-3.jpg 354w,
+                  ./images/team/img_md-354-@2x-3.jpg 708w,
+                  ./images/team/img_lg-270-@1x-3.jpg 270w,
+                  ./images/team/img_lg-270-@2x-3.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img_sm-450-@1x-3.jpg"
                 alt="Портрет Михайла Єрмакова UI Designer"
-                width="270"
-                height="260"
               />
               <div class="team__desc">
                 <h3 class="team__title">Михайло Єрмаков</h3>
