@@ -21,10 +21,6 @@
   margin-bottom: 9px;
 }
 
-.footer__contacts-address {
-  color: var(--light-text-color);
-}
-
 .footer--container {
   text-align: center;
   @media screen and (min-width: 1200px) {
@@ -98,6 +94,10 @@
   &:focus {
     color: var(--active-color);
   }
+}
+
+.footer__contacts-address {
+  color: var(--light-text-color);
 }
 
 .footer__form__email {

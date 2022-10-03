@@ -51,8 +51,12 @@
 }
 
 .modal__agriment-text {
-  font-size: 15px;
+  font-size: 12px;
   user-select: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .modal__agriment-link {
